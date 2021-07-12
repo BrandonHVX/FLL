@@ -97,11 +97,7 @@ export default () => {
           </div>
         ))}
       </Slider>
-      <div className="search-wrap">
-        <Link to="#" className="search-icon">
-          <i className="far fa-search" />
-        </Link>
-      </div>
+      <div className="search-wrap"></div>
     </section>
   );
 };

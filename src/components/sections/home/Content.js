@@ -31,10 +31,10 @@ export default () => {
       {/* <Team /> */}
       {/* <Testimonials /> */}
       <Faq />
-      <section className="client-section">
+      <section className="client-section mb-5">
         <div className="container">
           <div className="client-slider section-gap line-bottom">
-            <Client />
+            {/* <Client /> */}
           </div>
         </div>
       </section>

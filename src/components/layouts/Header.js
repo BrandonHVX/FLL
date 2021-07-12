@@ -3,7 +3,8 @@ import Navmenu from './Navmenu';
 import { Link } from 'gatsby';
 import classNames from 'classnames';
 
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/fastlane_logo.png';
+import LogoBlack from '../../assets/img/fastlane_logo.png';
 import Scroll from './Scroll';
 
 export default class Header extends Component {
@@ -21,11 +22,11 @@ export default class Header extends Component {
   handleScroll = () => {
     const { visibilityClass } = this.state;
     if (window.pageYOffset > 300) {
-      if (visibilityClass !== 'navbar-shrink') {
-        this.setState({ visibilityClass: 'navbar-shrink' });
+      if (visibilityClass !== 'navbar-shrink ') {
+        this.setState({ visibilityClass: 'navbar-shrink ' });
       }
     } else {
-      if (visibilityClass === 'navbar-shrink') {
+      if (visibilityClass === 'navbar-shrink ') {
         this.setState({ visibilityClass: '' });
       }
     }
@@ -46,8 +47,9 @@ export default class Header extends Component {
       >
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            logo
+            <img src={logo} width={250} />
           </a>
+
           <button
             onClick={_ => this.toggleMenu(!openMenu)}
             className={`navbar-toggler navbar-toggler-right ${
@@ -58,7 +60,6 @@ export default class Header extends Component {
             aria-expanded={openMenu}
             aria-label="Toggle navigation"
           >
-            Menu
             <i className="fas fa-bars"></i>
           </button>
 

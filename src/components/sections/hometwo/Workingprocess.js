@@ -1,29 +1,27 @@
 import React, { useState } from 'react';
 
-import processbg1 from '../../../assets/img/video-bg/01.jpg';
-import processbg2 from '../../../assets/img/video-bg/02.jpg';
+import processbg2 from '../../../assets/img/video-bg/fast-video-1.jpg';
+import processbg1 from '../../../assets/img/video-bg/fast-video-2.jpg';
 
 const processlist = [
   {
-    icon: 'fal fa-coffee',
+    icon: '',
     number: '01',
     title: 'Freight & Transportation Solutions',
-    text:
-      'Doloremque laudantium totam raperiaeaqu ipsa quae ab illo inventore veritatis etquasi',
+    text: 'Same Day & Express Delivery Available',
   },
   {
-    icon: 'fal fa-coffee',
+    icon: '',
     number: '02',
     title: 'Residential & Commercial Delivery',
-    text:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque',
+    text: 'Variety of Residential and Commercial non-dock business solutions.',
   },
   {
-    icon: 'fal fa-coffee',
+    icon: '',
     number: '03',
     title: 'Regional & Cross-Country Hauling',
     text:
-      'Quis autem vel eum iure reprehenderit qui ieas voluptate velit esse quam nihil mole',
+      'Logistical solutions for B2B customers who need long haul trucking options.',
   },
 ];
 
@@ -35,7 +33,7 @@ export default () => {
   };
 
   return (
-    <section className="working-process-section grey-bg">
+    <section className="working-process-section white-bg">
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6 col-md-10 order-lg-1 order-2">
