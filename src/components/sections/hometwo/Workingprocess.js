@@ -8,7 +8,7 @@ const processlist = [
     icon: '',
     number: '01',
     title: 'Freight & Transportation Solutions',
-    text: 'Same Day & Express Delivery Available',
+    text: 'Same Day & Express Delivery Available.',
   },
   {
     icon: '',
