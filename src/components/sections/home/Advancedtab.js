@@ -1,61 +1,57 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
-import icon1 from '../../../assets/img/icons/01.png';
-import icon2 from '../../../assets/img/icons/02.png';
-import icon3 from '../../../assets/img/icons/03.png';
-import lines from '../../../assets/img/lines/07.png';
-
-import img1 from '../../../assets/img/feature/01.jpg';
-import img2 from '../../../assets/img/feature/02.jpg';
-import img3 from '../../../assets/img/feature/03.jpg';
-import img4 from '../../../assets/img/feature/04.jpg';
-import img5 from '../../../assets/img/feature/05.jpg';
-import img6 from '../../../assets/img/feature/06.jpg';
 import { Tab, Nav } from 'react-bootstrap';
 
 import img from '../../../assets/img/tab-block.jpg';
 
-const expedited = [
+const missiontab = [
   {
     icon: 'fas fa-check',
-    text: 'Same Day & Express Delivery',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
   },
   {
     icon: 'fas fa-check',
-    text: 'Hot Shot, Scheduled & Routed Delivery',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
   },
   {
     icon: 'fas fa-check',
-    text: 'Local Pick Up & Delivery',
-  },
-];
-const finalmile = [
-  {
-    icon: 'fas fa-check',
-    text: 'Variety of residential delivery options.',
-  },
-  {
-    icon: 'fas fa-check',
-    text: 'Commercial non-dock business solutions',
-  },
-  {
-    icon: 'fas fa-check',
-    text: 'White golve delivery services',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
   },
 ];
-const longhaul = [
+const historytab = [
   {
     icon: 'fas fa-check',
-    text: 'Exclusive Vehicle Use',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
   },
   {
     icon: 'fas fa-check',
-    text: 'Customized Routes',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
   },
   {
     icon: 'fas fa-check',
-    text: 'Easy Payment Methods',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
+  },
+];
+const businessgoalstab = [
+  {
+    icon: 'fas fa-check',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
+  },
+  {
+    icon: 'fas fa-check',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
+  },
+  {
+    icon: 'fas fa-check',
+    text:
+      'There are many variations of passages of LoreIpsum available, but the majority have suffered',
   },
 ];
 const teammembertab = [
@@ -76,40 +72,9 @@ const teammembertab = [
   },
 ];
 
-const featuresblock = [
-  { img: img1, title: 'Expedited Delivery', text: 'Join us for consultatoins' },
-  { img: img2, title: 'File Mile', text: 'Join us for consultatoins' },
-  { img: img3, title: 'Long Hual', text: 'Join us for consultatoins' },
-];
-
-const serviceblock = [
-  {
-    icon: icon1,
-    title: 'Expedited Delivery',
-    text: 'Sed ut perspiciatis unde omnis iste natus erro volupta',
-  },
-  {
-    icon: icon2,
-    title: 'Final Mile',
-    text: 'Sed ut perspiciatis unde omnis iste natus erro volupta',
-  },
-  {
-    icon: icon3,
-    title: 'Long Haul',
-    text: 'Sed ut perspiciatis unde omnis iste natus erro volupta',
-  },
-];
-
 export default () => {
   return (
-    <section
-      className="service-section shape-style-one section-gap grey-bg advanced-tab section-gap"
-      id="solutions"
-    >
-      <div className="section-title text-center both-border mb-50">
-        <span className="title-tag">Our Services</span>
-        <h2 className="title">Real Solutions, Real Fast!</h2>
-      </div>
+    <section className="advanced-tab section-gap">
       <div className="container">
         {/* Tabs Buttons */}
         <div className="tab-buttons">
@@ -122,7 +87,10 @@ export default () => {
                 <Nav.Link eventKey="history">Final Mile</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="businessgoals">Long Haul</Nav.Link>
+                <Nav.Link eventKey="businessgoals">Business Goals</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="teammember">Team Member</Nav.Link>
               </Nav.Item>
             </Nav>
             <Tab.Content>
@@ -136,22 +104,17 @@ export default () => {
                     </div>
                     <div className="col-lg-6 col-md-10">
                       <div className="block-text">
-                        <div className="section-title left-border mb-40">
-                          <span className="title-tag">Expedited Delivery</span>
-                          <h4 className="mini-title">
-                            Freight & Transportation Solutions{' '}
-                          </h4>
-                        </div>
+                        <h2 className="title">
+                          Professional Business Guidance Agency
+                        </h2>
                         <p>
-                          Fastlane provides best-in-class ground expedite
-                          service for your time-sensitive freight. Shipment
-                          delays. Pressing delivery deadlines. Last-minute
-                          orders. Freight needed yesterday. No matter your
-                          urgent shipping needs, expedited transportation is an
-                          ideal solution.
+                          Sedut perspiciatis unde omnis iste natus error sit
+                          voluptat em accusantium doloremque laudantium, totam
+                          raperiaeaque ipsa quae ab illo inventore veritatis et
+                          quasi
                         </p>
                         <ul>
-                          {expedited.map((item, i) => (
+                          {missiontab.map((item, i) => (
                             <li key={i}>
                               <i className={item.icon} />
                               {item.text}
@@ -168,23 +131,17 @@ export default () => {
                   <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-10 order-2 order-lg-1">
                       <div className="block-text">
-                        <div className="section-title left-border mb-40">
-                          <span className="title-tag">Final Mile</span>
-                          <h4 className="mini-title">
-                            Residential & Commercial Delivery Options{' '}
-                          </h4>
-                        </div>
-
+                        <h2 className="title">
+                          Professional Business Guidance Agency
+                        </h2>
                         <p>
-                          Our team will help you simplify your home delivery
-                          needs. We cater to businesses that sell bulky and
-                          oversized products such as furniture and fixtures. Our
-                          final mile delivery services are customized to your
-                          needs. We offer a variety of residential delivery
-                          options.
+                          Sedut perspiciatis unde omnis iste natus error sit
+                          voluptat em accusantium doloremque laudantium, totam
+                          raperiaeaque ipsa quae ab illo inventore veritatis et
+                          quasi
                         </p>
                         <ul>
-                          {finalmile.map((item, i) => (
+                          {historytab.map((item, i) => (
                             <li key={i}>
                               <i className={item.icon} />
                               {item.text}
@@ -211,22 +168,17 @@ export default () => {
                     </div>
                     <div className="col-lg-6 col-md-10">
                       <div className="block-text">
-                        <div className="section-title left-border mb-40">
-                          <span className="title-tag">Long Haul</span>
-                          <h4 className="mini-title">
-                            Regional & Cross-Country Delivery Services{' '}
-                          </h4>
-                        </div>
+                        <h2 className="title">
+                          Professional Business Guidance Agency
+                        </h2>
                         <p>
-                          Logistical solutions for B2B customers who need long
-                          haul trucking options. Whether you need a sprinter van
-                          to travel across town or a large truck for
-                          cross-country trips, Fastlane Logistics will provide
-                          transportation options for B2B companies to keep your
-                          operations running smoothly.
+                          Sedut perspiciatis unde omnis iste natus error sit
+                          voluptat em accusantium doloremque laudantium, totam
+                          raperiaeaque ipsa quae ab illo inventore veritatis et
+                          quasi
                         </p>
                         <ul>
-                          {longhaul.map((item, i) => (
+                          {businessgoalstab.map((item, i) => (
                             <li key={i}>
                               <i className={item.icon} />
                               {item.text}

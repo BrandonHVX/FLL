@@ -1,30 +1,36 @@
 import React, { Fragment } from 'react';
 import Client from '../../layouts/Client';
-import About from './About';
+import About from '../hometwo/About';
 import Banner from './Banner';
 import Blog from './Blog';
-import Counter from './Counter';
+import Contact from '../homethree/Contact';
 import Features from './Features';
 import Service from './Service';
 import Skills from './Skills';
+import Statics from '../homethree/Statics';
 import Team from './Team';
 import Testimonials from './Testimonials';
 import Video from './Video';
 import Whyus from './Whyus';
+import Workingprocess from '../hometwo/Workingprocess';
+import Faq from './Faqs';
+import AdvanceTab from './Advancedtab';
 
 export default () => {
   return (
     <Fragment>
       <Banner />
-      <About />
+      <Workingprocess />
+      {/* <AdvanceTab /> */}
       <Service />
       {/* <Video /> */}
-      <Features />
+      {/* <Features /> */}
+      <Statics />
       <Whyus />
-      <Counter />
-      <Team />
-      <Skills />
-      <Testimonials />
+      {/* <Counter /> */}
+      {/* <Team /> */}
+      {/* <Testimonials /> */}
+      <Faq />
       <section className="client-section">
         <div className="container">
           <div className="client-slider section-gap line-bottom">
@@ -32,7 +38,8 @@ export default () => {
           </div>
         </div>
       </section>
-      <Blog />
+      <Contact />
+      {/* <Blog /> */}
     </Fragment>
   );
 };

@@ -1,106 +1,131 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby';
+import React, { Component } from 'react';
 import Navmenu from './Navmenu';
+import { Link } from 'gatsby';
 import classNames from 'classnames';
 
 import logo from '../../assets/img/logo.png';
+import Scroll from './Scroll';
 
-export default () => {
-  const [togglemethod, setTogglemethod] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [isMobilesmall, setIsMobilesmall] = useState(false);
-  const [isTop, setIsTop] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener(
-      'resize',
-      () => {
-        setIsMobile(window.innerWidth < 991);
-        setIsMobilesmall(window.innerWidth < 767);
-      },
-      false
-    );
-    window.addEventListener(
-      'load',
-      () => {
-        setIsMobile(window.innerWidth < 991);
-        setIsMobilesmall(window.innerWidth < 767);
-      },
-      false
-    );
-    // Sticky header
-    window.addEventListener(
-      'scroll',
-      () => {
-        setIsTop(window.scrollY > 110);
-      },
-      false
-    );
-  }, []);
-
-  const toggleClass = () => {
-    setTogglemethod(!togglemethod);
+export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      openMenu: false,
+      visibilityClass: '',
+    };
+  }
+  toggleMenu = value => {
+    this.setState({ openMenu: value });
   };
 
-  const mobileactive = isMobile ? 'breakpoint-on' : '';
-  const smallmobileactive = isMobilesmall ? 'd-none' : '';
-  const stickyheader = isTop ? 'sticky-on' : '';
+  handleScroll = () => {
+    const { visibilityClass } = this.state;
+    if (window.pageYOffset > 300) {
+      if (visibilityClass !== 'navbar-shrink') {
+        this.setState({ visibilityClass: 'navbar-shrink' });
+      }
+    } else {
+      if (visibilityClass === 'navbar-shrink') {
+        this.setState({ visibilityClass: '' });
+      }
+    }
+  };
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
-  return (
-    <header className={`sticky-header ${stickyheader}`}>
-      {/* Header Menu  */}
-      <div className="header-nav">
-        <div className="container-fluid container-1600">
-          <div className={`nav-container ${mobileactive}`}>
-            {/* Site Logo */}
-            <div className="site-logo">
-              <Link to="/">
-                <img src={logo} alt="Logo" />
-              </Link>
-            </div>
-            {/* Main Menu */}
-            <div
-              className={classNames('nav-menu d-lg-flex align-items-center', {
-                'menu-on': togglemethod,
-              })}
-            >
-              {/* Navbar Close Icon */}
-              <div className="navbar-close" onClick={toggleClass}>
-                <div className="cross-wrap">
-                  <span />
-                  <span />
-                </div>
-              </div>
-              {/* Mneu Items */}
-              <div className="menu-items">
-                <Navmenu />
-              </div>
-              {/* Pushed Item */}
-              <div className="nav-pushed-item" />
-            </div>
-            {/* Navbar Extra  */}
-            <div className="navbar-extra d-lg-block d-flex align-items-center">
-              {/* Navbtn */}
-              <div className={`navbar-btn nav-push-item ${smallmobileactive}`}>
-                <Link className="main-btn main-btn-3" to="#">
-                  Consulting Now
-                </Link>
-              </div>
-              {/* Navbar Toggler */}
-              <div
-                className={classNames('navbar-toggler', {
-                  active: togglemethod,
-                })}
-                onClick={toggleClass}
-              >
-                <span />
-                <span />
-                <span />
-              </div>
-            </div>
+  render() {
+    const { openMenu, visibilityClass } = this.state;
+    return (
+      <nav
+        className={`navbar navbar-expand-lg navbar-light fixed-top ${visibilityClass}`}
+        id="mainNav"
+      >
+        <div className="container">
+          <a className="navbar-brand" href="#page-top">
+            logo
+          </a>
+          <button
+            onClick={_ => this.toggleMenu(!openMenu)}
+            className={`navbar-toggler navbar-toggler-right ${
+              openMenu ? '' : 'collapsed'
+            }`}
+            type="button"
+            aria-controls="navbarResponsive"
+            aria-expanded={openMenu}
+            aria-label="Toggle navigation"
+          >
+            Menu
+            <i className="fas fa-bars"></i>
+          </button>
+
+          <div
+            className={`collapse navbar-collapse ${openMenu ? 'show' : ''}`}
+            id="navbarResponsive"
+          >
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="about"
+                >
+                  <a className="nav-link" href="#download">
+                    About
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="solutions"
+                >
+                  <a className="nav-link" href="#features">
+                    Solutions
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="profile"
+                >
+                  <a className="nav-link" href="#features">
+                    Profile
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="faq"
+                >
+                  <a className="nav-link" href="#features">
+                    FAQ
+                  </a>
+                </Scroll>
+              </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="contact"
+                >
+                  <a className="nav-link" href="#contact">
+                    Contact
+                  </a>
+                </Scroll>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </header>
-  );
-};
+      </nav>
+    );
+  }
+}
