@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import CountUp from 'react-countup';
+import Scroll from '../../layouts/Scroll';
 import Masonry from 'react-masonry-component';
 import VisibilitySensor from 'react-visibility-sensor';
 
@@ -68,9 +69,11 @@ export default () => {
                   </li>
                 ))}
               </ul>
-              <Link to="/about" className="main-btn">
-                Learn More
-              </Link>
+              <Scroll type="id" element="contact">
+                <a className="main-btn" href="#features">
+                  Contact Us
+                </a>
+              </Scroll>
             </div>
           </div>
           <div className="col-lg-6 col-md-10 order-1 order-lg-2">

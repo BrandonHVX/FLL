@@ -26,8 +26,8 @@ export default class Header extends Component {
         this.setState({ visibilityClass: 'navbar-shrink ' });
       }
     } else {
-      if (visibilityClass === 'navbar-shrink ') {
-        this.setState({ visibilityClass: '' });
+      if (visibilityClass === ' ') {
+        this.setState({ visibilityClass: 'navbar-shrink' });
       }
     }
   };

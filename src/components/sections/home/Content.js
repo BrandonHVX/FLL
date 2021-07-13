@@ -12,6 +12,7 @@ import Team from './Team';
 import Testimonials from './Testimonials';
 import Video from './Video';
 import Whyus from './Whyus';
+import Quote from './Contact';
 import Workingprocess from '../hometwo/Workingprocess';
 import Faq from './Faqs';
 import AdvanceTab from './Advancedtab';
@@ -20,6 +21,7 @@ export default () => {
   return (
     <Fragment>
       <Banner />
+      {/* <Quote /> */}
       <Workingprocess />
       {/* <AdvanceTab /> */}
       <Service />

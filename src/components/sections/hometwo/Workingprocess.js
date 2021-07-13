@@ -33,7 +33,7 @@ export default () => {
   };
 
   return (
-    <section className="working-process-section white-bg">
+    <section className="working-process-section white-bg" id="about">
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6 col-md-10 order-lg-1 order-2">
@@ -98,7 +98,8 @@ export default () => {
           </div>
         </div>
       </div>
-      <div className="working-circle" />
+
+      {/* <div className="working-circle" /> */}
     </section>
   );
 };

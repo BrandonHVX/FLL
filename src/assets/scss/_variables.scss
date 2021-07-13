@@ -6,6 +6,7 @@ $nuns: 'Nunito Sans', sans-serif;
 $primary-color: #fa0404;
 $secondary-color: #7e0503;
 $text-color: #616161;
+$text-color-light: #fffefecb;
 $orange: rgb(228, 80, 0);
 $white: #fff;
 $black: #000;
@@ -20,10 +21,12 @@ $sm: '(max-width: 767px)';
 $xsm: '(max-width: 575px)';
 $tiny: '(max-width: 399px)';
 
+$theme-color-2: rgba(233, 1, 1, 0.687);
+$theme-color-1: rgb(152, 4, 4);
 $theme-primary: #fdcc52;
 $theme-secondary: #ff9900;
 $theme-tertiary: #ff0112;
-
+$red: rgb(236, 8, 8);
 $gray-base: rgb(18, 17, 17);
 $gray-darker: lighten($gray-base, 13.5%); // #222
 $gray-dark: lighten($gray-base, 20%); // #333

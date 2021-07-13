@@ -8,6 +8,10 @@ header {
       top: 0;
     }
 
+    .site-logo {
+      width: 200px;
+    }
+
     .nav-container {
       position: relative;
       display: flex;
@@ -15,16 +19,15 @@ header {
       justify-content: space-between;
 
       .navbar-toggler {
-        border: 1px solid $primary-color;
         background-color: transparent;
         cursor: pointer;
         display: none;
-        padding: 15px;
+        padding: 10px;
         margin-left: 30px;
 
         span {
           position: relative;
-          background-color: $primary-color;
+          background-color: $white;
           border-radius: 0;
           display: block;
           height: 3px;
@@ -501,7 +504,7 @@ header {
     &.header-two {
       &.sticky-on {
         .header-nav {
-          background-color: $secondary-color;
+          background: linear-gradient(to right, $theme-color-1, $theme-color-2);
         }
       }
     }
@@ -529,7 +532,7 @@ header {
 
         &,
         a {
-          color: $text-color;
+          color: $text-color-light;
         }
 
         a:hover {
@@ -552,7 +555,7 @@ header {
 
       i {
         margin-right: 15px;
-        color: $primary-color;
+        color: white;
       }
     }
 
@@ -597,7 +600,7 @@ header {
         li {
           &,
           a {
-            color: $white;
+            color: $text-color-light;
           }
 
           a:hover {

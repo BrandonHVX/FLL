@@ -93,11 +93,15 @@ export default () => {
                 <div className="three" />
                 <div className="four" />
               </div>
+            
             </div>
+            Hello
           </div>
         ))}
       </Slider>
+      
       <div className="search-wrap"></div>
+  
     </section>
   );
 };

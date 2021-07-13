@@ -53,21 +53,9 @@
   }
   @media (min-width: 992px) {
     border-color: transparent;
+
     background-color: transparent;
-    .navbar-brand {
-      color: fade(white, 70%);
-      &:hover,
-      &:focus {
-        color: white;
-      }
-    }
-    .navbar-brand-scroll {
-      color: $gray-darker;
-      &:hover,
-      &:focus {
-        color: $theme-primary;
-      }
-    }
+
     .navbar-nav > li > a,
     .navbar-nav > li > a:focus {
       color: fade-out(white, 0.3);
