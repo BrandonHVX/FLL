@@ -6,15 +6,13 @@ import icon2 from '../../../assets/img/icons/02.png';
 import icon3 from '../../../assets/img/icons/03.png';
 import lines from '../../../assets/img/lines/07.png';
 
-import img1 from '../../../assets/img/feature/01.jpg';
+import img1 from '../../../assets/img/fast-ed.jpg';
 import img2 from '../../../assets/img/feature/02.jpg';
 import img3 from '../../../assets/img/feature/03.jpg';
 import img4 from '../../../assets/img/feature/04.jpg';
 import img5 from '../../../assets/img/feature/05.jpg';
 import img6 from '../../../assets/img/feature/06.jpg';
 import { Tab, Nav } from 'react-bootstrap';
-
-import img from '../../../assets/img/tab-block.jpg';
 
 const expedited = [
   {
@@ -131,7 +129,7 @@ export default () => {
                   <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-10">
                       <div className="block-image">
-                        <img src={img} alt="" />
+                        <img src={img1} alt="" />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-10">
@@ -195,7 +193,7 @@ export default () => {
                     </div>
                     <div className="col-lg-6 col-md-10 order-1 order-lg-2">
                       <div className="block-image">
-                        <img src={img} alt="" />
+                        <img src={img1} alt="" />
                       </div>
                     </div>
                   </div>
@@ -206,7 +204,7 @@ export default () => {
                   <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-10">
                       <div className="block-image">
-                        <img src={img} alt="" />
+                        <img src={img1} alt="" />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-10">
@@ -264,7 +262,7 @@ export default () => {
                     </div>
                     <div className="col-lg-6 col-md-10 order-1 order-lg-2">
                       <div className="block-image">
-                        <img src={img} alt="" />
+                        <img src={img1} alt="" />
                       </div>
                     </div>
                   </div>
