@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import logo from '../../assets/img/logo-2.png';
+import logo from '../../assets/img/fast-logo-white.png';
 import shape1 from '../../assets/img/lines/01.png';
 import shape2 from '../../assets/img/lines/02.png';
 
@@ -84,12 +84,9 @@ export default () => {
             <div className="col-lg-4 col-sm-6 order-lg-5 order-5">
               <div className="widget site-info-widget">
                 <div className="footer-logo">
-                  <img src={logo} alt="" />
+                  <img src={logo} alt="" width={250} />
                 </div>
-                <p>
-                  Power of choice is untrammelled &amp; when nothing prevents
-                  our being able
-                </p>
+                <p>Fastlane - Always ahead of the Situation</p>
                 <ul className="social-links">
                   <li>
                     <Link to="#">

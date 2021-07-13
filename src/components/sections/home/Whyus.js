@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import illustration from '../../../assets/img/illustration/02.png';
+import Fastdriver from '../../../assets/img/fast-driver.jpg';
 import line1 from '../../../assets/img/lines/03.png';
 import line2 from '../../../assets/img/lines/04.png';
 
 export default () => {
   return (
-    <section className="wcu-section box-style">
+    <section className="shape-style-one wcu-section  box-style ">
       <div className="container">
         <div className="wcu-inner">
           <div className="row align-items-center justify-content-center">
@@ -17,7 +17,7 @@ export default () => {
                 data-wow-duration="1500ms"
                 data-wow-delay="400ms"
               >
-                <img src={illustration} alt="" />
+                <img src={Fastdriver} alt="" />
               </div>
             </div>
             <div className="col-lg-6 col-md-10">

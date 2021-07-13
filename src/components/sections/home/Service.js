@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import icon1 from '../../../assets/img/icons/01.png';
+import icon1 from '../../../assets/img/tab-block.jpg';
 import icon2 from '../../../assets/img/icons/02.png';
 import icon3 from '../../../assets/img/icons/03.png';
 import lines from '../../../assets/img/lines/07.png';
 
 import img1 from '../../../assets/img/fast-ed.jpg';
-import img2 from '../../../assets/img/feature/02.jpg';
-import img3 from '../../../assets/img/feature/03.jpg';
+import img2 from '../../../assets/img/fast-fm.jpg';
+import img3 from '../../../assets/img/fast-lh.jpg';
 import img4 from '../../../assets/img/feature/04.jpg';
 import img5 from '../../../assets/img/feature/05.jpg';
 import img6 from '../../../assets/img/feature/06.jpg';
@@ -71,30 +71,6 @@ const teammembertab = [
     icon: 'fas fa-check',
     text:
       'There are many variations of passages of LoreIpsum available, but the majority have suffered',
-  },
-];
-
-const featuresblock = [
-  { img: img1, title: 'Expedited Delivery', text: 'Join us for consultatoins' },
-  { img: img2, title: 'File Mile', text: 'Join us for consultatoins' },
-  { img: img3, title: 'Long Hual', text: 'Join us for consultatoins' },
-];
-
-const serviceblock = [
-  {
-    icon: icon1,
-    title: 'Expedited Delivery',
-    text: 'Sed ut perspiciatis unde omnis iste natus erro volupta',
-  },
-  {
-    icon: icon2,
-    title: 'Final Mile',
-    text: 'Sed ut perspiciatis unde omnis iste natus erro volupta',
-  },
-  {
-    icon: icon3,
-    title: 'Long Haul',
-    text: 'Sed ut perspiciatis unde omnis iste natus erro volupta',
   },
 ];
 
@@ -193,7 +169,7 @@ export default () => {
                     </div>
                     <div className="col-lg-6 col-md-10 order-1 order-lg-2">
                       <div className="block-image">
-                        <img src={img1} alt="" />
+                        <img src={img2} alt="" />
                       </div>
                     </div>
                   </div>
@@ -204,7 +180,7 @@ export default () => {
                   <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 col-md-10">
                       <div className="block-image">
-                        <img src={img1} alt="" />
+                        <img src={img3} alt="" />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-10">

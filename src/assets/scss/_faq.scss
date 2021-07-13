@@ -86,7 +86,7 @@
 .faq-section .faq-loop.accordion .card .collapseparent.show + .card-header,
 .faq-section .faq-loop.accordion .card .card-header.active-header,
 .faq-section .faq-loop.accordion .card .card-header:hover {
-  background-color: $secondary-color;
+  background-color: $red;
 }
 
 .faq-section
@@ -106,7 +106,7 @@
   padding: 0 40px 20px 30px;
   font-size: 15px;
   line-height: 1.4;
-  background-color: $secondary-color;
+  background-color: $red;
   color: #fff;
 }
 

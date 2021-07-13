@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion, Card, Button } from 'react-bootstrap';
 
-import illustration from '../../../assets/img/illustration/03.png';
+import Fastfaq from '../../../assets/img/fast-faq.jpg';
 import circleimg from '../../../assets/img/faq-circle.png';
 
 export default () => {
@@ -12,7 +12,7 @@ export default () => {
     >
       <div className="container">
         <div className="faq-illustration-img">
-          <img src={illustration} alt="illustration" />
+          <img src={Fastfaq} alt="illustration" width={675} />
         </div>
         <div className="row justify-content-lg-end justify-content-center">
           <div className="col-lg-6 col-md-10">
@@ -29,15 +29,11 @@ export default () => {
               >
                 <Card>
                   <Accordion.Collapse eventKey="0" className="collapseparent">
-                    <Card.Body>
-                      But must explain to you how all this mistaken idea
-                      odenouncing pleasure and praising pain was born and will
-                      give
-                    </Card.Body>
+                    <Card.Body>Answer #1</Card.Body>
                   </Accordion.Collapse>
                   <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                      How To Create A Mobile App In Expo And Firebase
+                      Question #1
                       <span className="icons">
                         <i className="far fa-plus" />
                       </span>
@@ -46,15 +42,11 @@ export default () => {
                 </Card>
                 <Card>
                   <Accordion.Collapse eventKey="1" className="collapseparent">
-                    <Card.Body>
-                      But must explain to you how all this mistaken idea
-                      odenouncing pleasure and praising pain was born and will
-                      give
-                    </Card.Body>
+                    <Card.Body> Answer #2 </Card.Body>
                   </Accordion.Collapse>
                   <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                      Smashing Podcast Episode With Ben How ?
+                      Question #2
                       <span className="icons">
                         <i className="far fa-plus" />
                       </span>
@@ -63,15 +55,11 @@ export default () => {
                 </Card>
                 <Card>
                   <Accordion.Collapse eventKey="2" className="collapseparent">
-                    <Card.Body>
-                      But must explain to you how all this mistaken idea
-                      odenouncing pleasure and praising pain was born and will
-                      give
-                    </Card.Body>
+                    <Card.Body>Answer #3</Card.Body>
                   </Accordion.Collapse>
                   <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                      Learning Resources Challenging Workshops ?
+                      Question #3
                       <span className="icons">
                         <i className="far fa-plus" />
                       </span>
@@ -80,15 +68,11 @@ export default () => {
                 </Card>
                 <Card>
                   <Accordion.Collapse eventKey="3" className="collapseparent">
-                    <Card.Body>
-                      But must explain to you how all this mistaken idea
-                      odenouncing pleasure and praising pain was born and will
-                      give
-                    </Card.Body>
+                    <Card.Body>Answer #2</Card.Body>
                   </Accordion.Collapse>
                   <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                      Micro-Typography: How To Space Kern ?
+                      Question #4
                       <span className="icons">
                         <i className="far fa-plus" />
                       </span>
