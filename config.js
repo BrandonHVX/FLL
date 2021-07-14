@@ -1,12 +1,12 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter New age', // <title>
-  manifestName: 'newage',
+  siteTitle: 'Fastlane Logistics', // <title>
+  manifestName: 'fastlane',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/icons/star.png',
+  manifestIcon: 'src/assets/img/icons/fast-favicon.png',
   pathPrefix: `/gatsby-starter-newage/`, // This path is subpath of your hosting https://domain/portfolio
   // social
   socialLinks: [
