@@ -177,6 +177,13 @@ export default () => {
                         </a>
                       </Scroll>
                     </li>
+                    <li className="nav-item">
+                      <Link to="/contactus/">
+                        <a className="nav-link" href="#contact">
+                          REQUEST A QUOTE
+                        </a>
+                      </Link>
+                    </li>
                   </ul>
                 </div>
                 {/* Pushed Item */}

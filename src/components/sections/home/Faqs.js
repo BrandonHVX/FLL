@@ -7,7 +7,7 @@ import circleimg from '../../../assets/img/faq-circle.png';
 export default () => {
   return (
     <section
-      className="faq-section section-gap with-illustration with-shape grey-bg"
+      className="faq-section  skill-section section-gap with-illustration with-shape "
       id="faq"
     >
       <div className="container">

@@ -123,6 +123,17 @@ export default class Header extends Component {
                   </a>
                 </Scroll>
               </li>
+              <li className="nav-item">
+                <Scroll
+                  onClick={_ => this.toggleMenu(!openMenu)}
+                  type="id"
+                  element="contact"
+                >
+                  <a className="nav-link" href="#contact">
+                    REQUEST A QUOTE
+                  </a>
+                </Scroll>
+              </li>
             </ul>
           </div>
         </div>

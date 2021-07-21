@@ -291,15 +291,16 @@ a {
 .section-title {
   color: $gray-base;
   .title-tag {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
+    text-transform: uppercase;
     color: $primary-color;
     display: inline-block;
     position: relative;
     margin-bottom: 15px;
 
     @media #{$xsm} {
-      font-size: 18px;
+      font-size: 25px;
     }
 
     &::before,

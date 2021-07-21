@@ -27,12 +27,12 @@ export default () => {
       <Service />
       {/* <Video /> */}
       {/* <Features /> */}
-      <Statics />
+      <Statics /> <Faq />
       <Whyus />
       {/* <Counter /> */}
-      {/* <Team /> */}
+      <Team />
+      {/* <Skills /> */}
       {/* <Testimonials /> */}
-      <Faq />
       <section className="client-section mb-5">
         <div className="container">
           <div className="client-slider section-gap line-bottom">
