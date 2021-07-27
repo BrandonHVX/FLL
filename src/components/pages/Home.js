@@ -16,8 +16,8 @@ export default () => {
 
       <Header />
 
-      <Content />
-      <Footer />
+      {/* <Content />
+      <Footer /> */}
     </Fragment>
   );
 };
