@@ -10,7 +10,7 @@ export default () => {
   return (
     <Fragment>
       <MetaTags>
-        <title>Fastlane Logistics| Homepage</title>
+        <title>Fastlane Logistics| Home</title>
         <meta name="description" content="#" />
       </MetaTags>
 
